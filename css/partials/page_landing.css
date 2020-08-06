@@ -2,12 +2,12 @@
   :root {
     font-size: 40%;
   }
-  
 }
 
 #container {
   width: 90vw;
   max-width: 700px;
+  height: auto;
 }
 
 #page-landing {
@@ -45,7 +45,7 @@
   font-weight: 500;
   font-size: 15rem;
   line-height: 16rem;
-  margin-top: 0.8rem;
+  margin-top: .8rem;
 }
 
 .hero-image {
@@ -81,8 +81,6 @@
 
   transition: background 0.2s;
 }
-
-
 
 .buttons-container a img {
   width: 4rem;

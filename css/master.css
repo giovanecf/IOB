@@ -10,9 +10,9 @@
     --color-title-in-primary: #FFFFFF;
     --color-text-in-primary: #E6E6F0;
     --color-text-title: #cf7711;
-    --color-text-complement: #9C98A6;
+    --color-text-complement: #75727e;
     --color-text-base: #6A6180;
-    --color-line-in-white: #E6E6F0;
+    --color-line-in-white: #afafb8;
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
     --color-box-base: #FFFFFF;
@@ -49,6 +49,11 @@ textarea {
   font-family: Poppins;
   font-size: 1.6rem;
   color: var(--color-text-base);
+}
+
+#container{
+  width: 90vw;
+  height: 100vh;
 }
 
 @media (min-width: 700px) {

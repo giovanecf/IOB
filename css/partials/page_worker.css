@@ -1,6 +1,8 @@
-#page-worker #container{
-    width: 70vw;
-    height: 100vh;
+@media (max-width: 699px){
+    :root {
+      font-size: 40%;
+    }
+    
 }
 
 #search-worker {

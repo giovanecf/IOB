@@ -36,9 +36,30 @@
 .textarea-block:focus-within::after {
     content:"";
     width: calc(100% - 3.2rem);
-    height: 4px;
+    height: 2px;
     background: var(--color-primary-light);
     position: absolute;
     left: 1.6rem;
     bottom: 0;
+}
+
+.textarea-block:focus-within::after {
+    bottom: .7rem;
+}
+
+@media (min-width:700px) {
+    .input-block:focus-within::after,
+    .textarea-block:focus-within::after {
+        content:"";
+        width: calc(100% - 3.2rem);
+        height: 3px;
+        background: var(--color-primary-light);
+        position: absolute;
+        left: 1.6rem;
+        bottom: 0;
+    }
+
+    .textarea-block:focus-within::after {
+        bottom: .7rem;
+    }
 }

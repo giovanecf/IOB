@@ -32,6 +32,8 @@
 		<link rel="stylesheet" href="../css/partials/forms.css">
 		<link rel="stylesheet" href="../css/partials/header.css">
 
+		<script src="../scripts/addField.js" defer></script>
+
 	</head>
 	<body id="page-post-service">
 
@@ -137,13 +139,52 @@
 							</select>
 						</div>
 						<div class="input-block">
-							<label for="best-days">Melhores Dias <small>(Separado com vírgula(,). Ex: Segunda, Quinta, Sábado)</small></label>
-							<input class="best-days" id="best-days" type="text" required>
+							<label for="cost">Custo da sua hora <small>(Opcional)<br>(R$)</small></label>
+							<input class="cost" id="cost" type="number">
 						</div>
 
 					</fieldset>
 
+					<fieldset id="schedule-itens">
+						<legend>
+							Horários Disponíveis
+							<button type="button" id="add-time">+ Novo Horário</button>
+						</legend>
+
+						<div class="schedule-item">
+							<div class="select-block">
+								<label for="weekday">Dia da Semana</label>
+								<select name="weekday[]" id="weekday" required>
+									<option value="" disabled="" hidden="">Selecione uma opção</option>
+									<option value="1">Domingo</option>
+									<option value="2">Segunda-Feira</option>
+									<option value="3">Terça-Feira</option>
+									<option value="4">Quarta-Feira</option>
+									<option value="5">Quinta-Feira</option>
+									<option value="6">Sexta-Feira</option>
+									<option value="7">Sábado</option>
+								</select>
+							</div>
+							<div class="input-block">
+								<label for="time-from">Das</label>
+								<input type="time" name="time-from[]">
+							</div>
+							<div class="input-block">
+								<label for="time-to">Até</label>
+								<input type="time" name="time-to[]">
+							</div>
+						</div>
+
+					</fieldset>
 				</form>
+				<footer>
+					<p>
+						<img src="../images/warning.png" alt="Importante">
+						Importante! <br> Preencha todos os dados.
+					</p>
+
+					<button type="submit" form="create-service">Salvar Casdastro</button>
+				</footer>
 			</main>
 		</div>
 	</body>
